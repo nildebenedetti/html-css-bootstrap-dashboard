@@ -51,7 +51,8 @@ table th:first-child {
 /* Label */
 
 .label {
-    padding:4px
+    padding:4px 5px;
+
 }
 
 /* Buttons */
