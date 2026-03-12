@@ -2,6 +2,23 @@
 
 /* Navbar */
 
+
+/* Logo */
+
 img.duck-logo {
     width:60px;
 }
+
+/* Navbar text color */
+
+input.form-control {
+    --bs-text-opacity: black
+}
+
+.navbar-nav {
+    --bs-navbar-active-color:white;
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: white;
+    --bs-nav-link-disabled-color: lightgrey;
+}
+
