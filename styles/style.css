@@ -65,7 +65,7 @@ display: none;
 
 }
 
-/* Buttons */
+/* Buttons *
  .btn-edit, .btn-bin {
     border-color: #6C757D;
     
@@ -76,3 +76,4 @@ display: none;
  td:not(.book-title) {
     white-space: nowrap;
  }
+
