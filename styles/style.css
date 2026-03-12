@@ -26,3 +26,8 @@ input.form-control {
     --bs-nav-link-disabled-color: #909294;
 }
 
+/* Catalogo Libri */
+
+.btn-add { 
+    border:none;
+}
