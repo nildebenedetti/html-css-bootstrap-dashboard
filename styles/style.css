@@ -65,13 +65,13 @@ display: none;
 
 }
 
-/* Buttons *
+/* Buttons */
  .btn-edit, .btn-bin {
     border-color: #6C757D;
     
  }
 
- /* Tutti i td nowrap, tranne .title */
+  /* Tutti i td nowrap, tranne .title */
  
  td:not(.book-title) {
     white-space: nowrap;
