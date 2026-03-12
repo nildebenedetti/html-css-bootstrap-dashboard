@@ -54,3 +54,10 @@ table th:first-child {
     padding:4px
 }
 
+/* Buttons */
+ .btn-edit, .btn-bin {
+    border-color: #6C757D;
+    
+ }
+ 
+
