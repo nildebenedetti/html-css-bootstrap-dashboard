@@ -1,18 +1,22 @@
 
 
-/* Navbar */
+/* -----Navbar---- */
 
 
 /* Logo */
 
 img.duck-logo {
-    width:60px;
+    width:55px;
 }
 
 /* Navbar text color */
 
 input.form-control {
     --bs-text-opacity: black
+}
+
+.navbar-toggler {
+    --bs-navbar-color: white;
 }
 
 .navbar-nav {
