@@ -16,7 +16,7 @@ input.form-control {
 }
 
 .navbar-toggler {
-    --bs-navbar-color: white;
+    border-color: #FFFFFF;
 }
 
 .navbar-nav {
