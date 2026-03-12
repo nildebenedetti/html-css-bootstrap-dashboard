@@ -32,4 +32,8 @@ input.form-control {
     border:none;
 }
 
-/
+/* Table */
+
+table th:first-child {
+    display:none; 
+}
