@@ -38,13 +38,22 @@ table th:first-child {
     display:none; 
 }
 
- th:nth-child(3), tab {
+
+th:nth-child(3), tab {
     display:none;
 }
 
-@media screen and (min-width:768px) {
+.data {
+display: none;
+}
+
+@media screen and (min-width:768px;) {
      th:nth-child(3),td:nth-of-type(3) {
     display:table-cell;
+
+    .data {
+    display: table-cell;
+    }
 }
 }
 
@@ -61,4 +70,9 @@ table th:first-child {
     border-color: #6C757D;
     
  }
+
+ /* Tutti i td nowrap, tranne .title */
  
+ td:not(.book-title) {
+    white-space: nowrap;
+ }
