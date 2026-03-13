@@ -532,8 +532,11 @@
 
 
     <!-- Provo a inserire l'off-canvas -->
-
+ <div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+ </div>
     
+
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -541,7 +544,92 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            ...
+            
+        <section class="book-form">
+            <header class="header mx-0">
+                <h2 class="page-header fw-light fw-bold p-4">
+                    Nuovo Libro
+                </h2>
+
+            </header>
+
+            <div class="wrapper">
+
+                <form>
+                    <!-- struttura a row-->
+                    <div class="container">
+                        <div class="row border border-0 border-bottom border-2 pb-4">
+                            <!-- inserisco 2*input text con col-6 nome autore + cognome autore-->
+                            <div class="col-6 mb-3">
+                                <label for="author-name" class="form-label">Nome Autore</label>
+                                <input required type="text" class="form-control" id="author-name"
+                                    placeholder="Inserisci il nome dell'autore" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label required for="author-surname" class="form-label">Cognome Autore</label>
+                                <input type="text" class="form-control" id="author-surname"
+                                    placeholder="Inserisci il cognnome dell'autore" aria-describedby="emailHelp">
+                            </div>
+
+
+                            <!-- inserisco 1*input text con col-12 e testo chiarificatore-->
+                            <div class="col-12 mb-3">
+                                <label for="title" class="form-label">Titolo</label>
+                                <input required type="text" class="form-control" id="title"
+                                    placeholder="Inserisci il titolo del libro" aria-describedby="emailHelp">
+                                <div id="title-instructions" class="form-text">Titolo versione italiana</div>
+                            </div>
+                            <!--Inserisco 1*select + 2* input text con col-sm-12 e col-lg-4-->
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="select-genre" class="form-label">Genere</label>
+                                <select disabled class="form-select" aria-label="Disabled select example">
+                                    <option selected>Scegli il genere</option>
+                                    <option value="1">Fantasy</option>
+                                    <option value="2">Thriller</option>
+                                    <option value="3">Romantico</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="published-year" class="form-label">Anno di pubblicazione</label>
+                                <input type="text" class="form-control" id="published-year"
+                                    placeholder="Inserisci l'anno" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="ISBN#" class="form-label">ISBN#</label>
+                                <input required type="text" class="form-control" id="ISBN#"
+                                    placeholder="Inserisci il codice ISBN#" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <!-- Inserisco text-area con w-100-->
+                        <form>
+                            <div class="container mt-3">
+                                <div class="row">
+                                    <label for="text-area" class="form-label">Note</label>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="text-area" style="height: 100px"></textarea>
+                                        <label class="ms-2" for="text-area">Inserisci eventuali note sul libro
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        
+
+                        <!-- checkbox -->
+                        <div class="container pt-4">
+                            <div class="mb-5 form-check ">
+                                <input type="checkbox" class="form-check-input" id="check-btn">
+                                <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
+                            </div>
+                            <!-- button -->
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </section>
         </div>
     </div>
 
