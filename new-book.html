@@ -90,8 +90,18 @@
                 <form>
                     <!-- struttura a row-->
                     <div class="container">
-                        <div class="row">
+                        <div class="row mx-0">
                             <!-- inserisco 2*input text con col-6 nome autore + cognome autore-->
+                            <div class="col-6 mb-3">
+                                <label for="author-name" class="form-label mx-1">Nome Autore</label>
+                                <input type="text" class="form-control" id="author-name" placeholder="Inserisci il nome dell'autore"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="author-surname" class="form-label mx-1">Cognome Autore</label>
+                                <input type="text" class="form-control" id="author-surname" placeholder="Inserisci il cognnome dell'autore"
+                                    aria-describedby="emailHelp">
+                            </div>
 
                             <!-- inserisco 1*input text con col-12-->
 
@@ -116,7 +126,7 @@
     </main>
 
     <!-- inserisco script bootstrap-->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
