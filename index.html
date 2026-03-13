@@ -94,11 +94,15 @@
                                             <h2 class="catalogue-title fw-light">Catalogo Libri</h2>
                                         </div>
                                         <div class="col-6 d-flex justify-content-end">
-                                            <a href="new-book.html">
-                                            <button class="btn-add bg-primary text-light rounded-2 p-2">
-                                                Aggiungi
-                                                Libro</button></a>
-                                        </div>
+                                            <!-- button per offcanvas-->
+                                              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Aggiungi Libro</button>
+                                            <!-- OLD BUTTON CON COLLEGAMENTO PAGINA ----
+                                                <a href="new-book.html">
+                                                <button class="btn-add bg-primary text-light rounded-2 p-2">
+                                                    Aggiungi
+                                                    Libro</button></a> -->
+                                                </div>
+                                                
                                     </div>
                                 </div>
 
@@ -532,11 +536,7 @@
 
 
     <!-- Provo a inserire l'off-canvas -->
- <div>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
- </div>
-    
-
+ 
 
     <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
