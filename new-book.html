@@ -113,19 +113,20 @@
                             </div>
                             <!--Inserisco 1*select + 2* input text con col-sm-12 e col-lg-4-->
                             <div class="col-12 col-lg-4 mb-3">
-                            <select disabled class="form-select" aria-label="Disabled select example" >
-                                <option selected >Scegli il genere</option>
-                                <option value="1">Fantasy</option>
-                                <option value="2">Thriller</option>
-                                <option value="3">Romantico</option>
-                            </select>
+                                <label for="select-genre" class="form-label">Genere</label>
+                                <select disabled class="form-select" aria-label="Disabled select example">
+                                    <option selected>Scegli il genere</option>
+                                    <option value="1">Fantasy</option>
+                                    <option value="2">Thriller</option>
+                                    <option value="3">Romantico</option>
+                                </select>
                             </div>
-                             <div class="col-12 col-lg-4 mb-3">
+                            <div class="col-12 col-lg-4 mb-3">
                                 <label for="published-year" class="form-label">Anno di pubblicazione</label>
                                 <input type="text" class="form-control" id="published-year"
                                     placeholder="Inserisci l'anno" aria-describedby="emailHelp">
                             </div>
-                             <div class="col-12 col-lg-4 mb-3">
+                            <div class="col-12 col-lg-4 mb-3">
                                 <label for="ISBN#" class="form-label">ISBN#</label>
                                 <input required type="text" class="form-control" id="ISBN#"
                                     placeholder="Inserisci il codice ISBN#" aria-describedby="emailHelp">
@@ -133,14 +134,22 @@
                         </div>
                         <!-- Inserisco text-area con w-100-->
 
-                        <!-- checkbox -->
-                         <div class="container mx-3 pt-4">
-                        <div class="mb-5 form-check ">
-                            <input type="checkbox" class="form-check-input" id="check-btn">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
                         </div>
-                        <!-- button -->
-                        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+                        <!-- checkbox -->
+                        <div class="container mx-3 pt-4">
+                            <div class="mb-5 form-check ">
+                                <input type="checkbox" class="form-check-input" id="check-btn">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <!-- button -->
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </form>
