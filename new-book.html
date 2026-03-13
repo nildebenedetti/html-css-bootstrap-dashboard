@@ -94,11 +94,11 @@
                             <!-- inserisco 2*input text con col-6 nome autore + cognome autore-->
                             <div class="col-6 mb-3">
                                 <label for="author-name" class="form-label">Nome Autore</label>
-                                <input type="text" class="form-control" id="author-name"
+                                <input required type="text" class="form-control" id="author-name"
                                     placeholder="Inserisci il nome dell'autore" aria-describedby="emailHelp">
                             </div>
                             <div class="col-6 mb-3">
-                                <label for="author-surname" class="form-label">Cognome Autore</label>
+                                <label required for="author-surname" class="form-label">Cognome Autore</label>
                                 <input type="text" class="form-control" id="author-surname"
                                     placeholder="Inserisci il cognnome dell'autore" aria-describedby="emailHelp">
                             </div>
@@ -106,14 +106,14 @@
 
                             <!-- inserisco 1*input text con col-12 e testo chiarificatore-->
                             <div class="col-12 mb-3">
-                                <label for="author-name" class="form-label">Titolo</label>
-                                <input type="text" class="form-control" id="author-name"
+                                <label for="title" class="form-label">Titolo</label>
+                                <input required type="text" class="form-control" id="title"
                                     placeholder="Inserisci il titolo del libro" aria-describedby="emailHelp">
                                 <div id="title-instructions" class="form-text">Titolo versione italiana</div>
                             </div>
                             <!--Inserisco 1*select + 2* input text con col-sm-12 e col-lg-4-->
                             <div class="col-12 col-lg-4 mb-3">
-                            <select class="form-select" aria-label="Disabled select example" disabled>
+                            <select disabled class="form-select" aria-label="Disabled select example" >
                                 <option selected >Scegli il genere</option>
                                 <option value="1">Fantasy</option>
                                 <option value="2">Thriller</option>
@@ -125,6 +125,12 @@
                                 <input type="text" class="form-control" id="published-year"
                                     placeholder="Inserisci l'anno" aria-describedby="emailHelp">
                             </div>
+                             <div class="col-12 col-lg-4 mb-3">
+                                <label for="ISBN#" class="form-label">ISBN#</label>
+                                <input required type="text" class="form-control" id="ISBN#"
+                                    placeholder="Inserisci IL CODICE ISBN#" aria-describedby="emailHelp">
+                            </div>
+
 
                         </div>
                         <!-- il precedente div dovrà avere un border bottom che funge da hr-->
