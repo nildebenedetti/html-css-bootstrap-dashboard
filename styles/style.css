@@ -32,30 +32,13 @@ input.form-control {
     border:none;
 }
 
-/* Table */
+/* Table first row invisible*/
 
 table th:first-child {
     display:none; 
 }
 
 
-th:nth-child(3), tab {
-    display:none;
-}
-
-.data {
-display: none;
-}
-
-@media screen and (min-width:768px;) {
-     th:nth-child(3),td:nth-of-type(3) {
-    display:table-cell;
-
-    .data {
-    display: table-cell;
-    }
-}
-}
 
 /* Label */
 
