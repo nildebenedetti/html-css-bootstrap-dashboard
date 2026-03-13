@@ -78,8 +78,8 @@
     <main class="main">
 
         <section class="book-form">
-            <header class="header">
-                <h2 class="page-header fw-light p-3">
+            <header class="header mx-0">
+                <h2 class="page-header fw-light fw-bold p-4">
                     Nuovo Libro
                 </h2>
 
@@ -90,7 +90,7 @@
                 <form>
                     <!-- struttura a row-->
                     <div class="container">
-                        <div class="row mx-0">
+                        <div class="row">
                             <!-- inserisco 2*input text con col-6 nome autore + cognome autore-->
                             <div class="col-6 mb-3">
                                 <label for="author-name" class="form-label mx-1">Nome Autore</label>
@@ -106,31 +106,34 @@
 
                             <!-- inserisco 1*input text con col-12 e testo chiarificatore-->
                             <div class="col-12 mb-3">
-                                <label for="author-name" class="form-label mx-1">Titolo</label>
+                                <label for="author-name" class="form-label">Titolo</label>
                                 <input type="text" class="form-control" id="author-name"
                                     placeholder="Inserisci il titolo del libro" aria-describedby="emailHelp">
                                 <div id="title-instructions" class="form-text">Titolo versione italiana</div>
                             </div>
-
                             <!--Inserisco 3* input text con col-sm-12 e col-lg-4-->
-                            <select class="col-sm-12 col-lg-4 form-select pt-2 pb-2 mb-3" aria-label="Default select example">
+                            <div class="col-12 col-lg-4">
+                            <select class="form-select" aria-label="Disabled select example" disabled>
                                 <option selected >Scegli il genere</option>
                                 <option value="1">Fantasy</option>
                                 <option value="2">Thriller</option>
                                 <option value="3">Romantico</option>
                             </select>
+                            </div>
 
                         </div>
                         <!-- il precedente div dovrà avere un border bottom che funge da hr-->
                         <!-- Inserisco text-area con w-100-->
 
                         <!-- checkbox -->
+                         <div class="container mx-3">
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="check-btn">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <!-- button -->
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
                 </form>
             </div>
